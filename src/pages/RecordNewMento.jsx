@@ -22,7 +22,7 @@ const RecordMentoPage = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:5000/api/mento', {
+      .post('https://mentomori.herokuapp.com/api/mento', {
         recipient: mento.recipient,
         message: mento.message,
       })
