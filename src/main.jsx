@@ -5,6 +5,7 @@ import MentoBookPage from './pages/MentoBookPage';
 import RecordMentoPage from './pages/RecordNewMento';
 import MentoPage from './pages/MentoPage';
 import NotFoundPage from './pages/NotFoundPage';
+import './index.css';
 
 ReactDOM.render(
   <BrowserRouter>
