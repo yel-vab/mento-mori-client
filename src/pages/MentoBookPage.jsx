@@ -11,27 +11,27 @@ const MentoBookPage = () => {
   const [mentos, modifyMentos] = useState([]);
 
   const retrieveMentos = async () => {
-    const { data } = await axios.get('http://localhost:5000/api/mentos');
+    const { data } = await axios.get('https://mentomori.herokuapp.com/api/mentos');
     modifyMentos(data);
   };
 
   const sortNewest = async (e) => {
     const { data } = await axios.get(
-      'http://localhost:5000/api/mentos/sort-newest'
+      'https://mentomori.herokuapp.com/api/mentos/sort-newest'
     );
     modifyMentos(data);
   };
 
   const sortAscending = async (e) => {
     const { data } = await axios.get(
-      'http://localhost:5000/api/mentos/sort-a-to-z'
+      'https://mentomori.herokuapp.com/api/mentos/sort-a-to-z'
     );
     modifyMentos(data);
   };
 
   const sortDescending = async (e) => {
     const { data } = await axios.get(
-      'http://localhost:5000/api/mentos/sort-z-to-a'
+      'https://mentomori.herokuapp.com/api/mentos/sort-z-to-a'
     );
     modifyMentos(data);
   };

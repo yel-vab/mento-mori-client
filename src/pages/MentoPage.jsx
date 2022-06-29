@@ -17,7 +17,7 @@ const MentoPage = () => {
   const [showDeletionComponent, toggleShowDeletionComponent] = useState(false);
 
   const fetchMento = async () => {
-    const { data } = await axios.get(`http://localhost:5000/api/mento/${id}`);
+    const { data } = await axios.get(`https://mentomori.herokuapp.com/api/mento/${id}`);
     setMento({ ...data });
   };
   

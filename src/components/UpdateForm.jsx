@@ -21,7 +21,7 @@ const UpdateForm = ({
     e.preventDefault();
     toggleShowUpdateForm(false);
     axios
-      .put(`http:///localhost:5000/api/mento/${mento._id}`, {
+      .put(`https://mentomori.herokuapp.com/api/mento/${mento._id}`, {
         ...duplicateMento,
       })
       .then(() => {

@@ -12,7 +12,7 @@ const DeletionComponent = ({
   const deleteMentoHandler = (e) => {
     e.preventDefault();
     toggleShowDeletionComponent(false);
-    axios.delete(`http://localhost:5000/api/mento/${mento._id}`).then(() => {
+    axios.delete(`https://mentomori.herokuapp.com/api/mento/${mento._id}`).then(() => {
       window.location.replace('/');
     });
   };
